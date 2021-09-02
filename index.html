@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+  <header>
+    <span class="logo">Rental</span>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#">Appointment</a></li
+    </ul>
+  </header>
+  <section class="intro-section">
+    <div class="intro-content">
+      <div class="intro-text">
+        <h1>Get Your Dream Space <br>With Rental</h1>
+        <p>Buy or rent beautiful houses in many place</p>
+      </div>
+      <div class="intro-img"></div>
+    </div>
+  </section>
+    <div class="form">
+      <form name="form">
+      <table>
+        <tr>
+          <td>
+          <label><i class="fas fa-map-marker-alt"></i>Location</label>
+          </td>
+         <td>
+          <label><i class="fas fa-bed"></i>Number of bedrooms</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="location" class="input"/>
+          </td>
+          <td>
+            <input type="text" name="bedroom" class="input"/>
+          </td>
+          <td class="radio-btns"><input type="radio" name="house_status" id="buy" value="Buy"/>
+          <label for="buy" class="radio-btn">Buy</label>
+          <input type="radio" name="house_status" id="rent" value="Rent"/>
+          <label for="rent" class="radio-btn">Rent</label></label>
+          </td>
+        </tr>
+        <tr>
+          <td><label><i class="fas fa-calendar-check"></i>Check In</label></td>
+          <td><label><i class="fas fa-calendar-week"></i>Check Out</label></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="checkin" placeholder="DD-MM-YYYY" class="input"/>
+          </td>
+          <td>
+            <input type="text" name="checkout" placeholder="DD-MM-YYYY" class="input"/>
+          </td>
+         <td>
+            <input type="checkbox" name="parking" id="parking"/>
+            <label for="parking" class="checkbox">Parking</label>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="Search availability" onclick="getForm()"/></td>
+        </tr>
+      </table>
+      </form>
+    </div>
+    <div class="main-container" id="booking">
+      <div class="images">
+        <img class="main-img img" />
+        <div class="sec-images">
+          <img class="img" onclick="changeImg(this.src)"/>
+          <img class="img" onclick="changeImg(this.src)"/>
+          <img class="img" onclick="changeImg(this.src)"/>
+        </div>
+      </div>
+      <div class="content">
+   <div class="details">
+     <h3>Houes Detail</h3>
+     <ul class="detail_list">
+       <li>Location : <span id="location"></span></li>
+       <li>Bedroom : <span id="bedroom"></span></li>
+       <li>Check In : <span id="checkin"></span></li>
+       <li>Check Out : <span id="checkout"></span></li>
+       <li>Houes Status : <span id="house_status"></span></li>
+       <li>Parking : <span id="parking_status"></span></li>
+     </ul>
+     <h3>Amenities</h3>
+     <ul class="detail_list">
+       <li><i class="fas fa-shower"></i>Shower</li>
+       <li><i class="fas fa-utensils"></i>Kitchen</li>
+       <li><i class="fas fa-wifi"></i>Wifi</li>
+       <li><i class="fas fa-tv"></i>Tv</li>
+     </ul>
+    </div>
+    </div>
+    </div>
+    <footer class="footer-box">
+      <div class="footer-content">
+        <p>Design by aadil</p>
+        <p>Images by <a href="https://unsplash.com/">Unsplash</a></p>
+        <p>Icons by <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2">Font awesome</a></p>
+      </div>
+      </footer>
+  <script src="main.js"></script>
+</body>
+</html>
